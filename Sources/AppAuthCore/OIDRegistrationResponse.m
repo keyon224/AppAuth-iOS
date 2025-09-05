@@ -27,7 +27,7 @@
 NSString *const OIDClientIDParam = @"client_id";
 NSString *const OIDClientIDIssuedAtParam = @"client_id_issued_at";
 NSString *const OIDClientSecretParam = @"client_secret";
-NSString *const OIDClientSecretExpirestAtParam = @"client_secret_expires_at";
+NSString *const OIDClientSecretExpiresAtParam = @"client_secret_expires_at";
 NSString *const OIDRegistrationAccessTokenParam = @"registration_access_token";
 NSString *const OIDRegistrationClientURIParam = @"registration_client_uri";
 
@@ -58,7 +58,7 @@ static NSString *const kAdditionalParametersKey = @"additionalParameters";
     fieldMap[OIDClientSecretParam] =
     [[OIDFieldMapping alloc] initWithName:@"_clientSecret"
                                      type:[NSString class]];
-    fieldMap[OIDClientSecretExpirestAtParam] =
+    fieldMap[OIDClientSecretExpiresAtParam] =
     [[OIDFieldMapping alloc] initWithName:@"_clientSecretExpiresAt"
                                      type:[NSDate class]
                                conversion:[OIDFieldMapping dateEpochConversion]];
